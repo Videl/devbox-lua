@@ -9,3 +9,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* 
 # Warning: the rm -rf won't let this image be a base, but it makes it lighter
+
+# To be able to upload to luarocks
+RUN luarocks install dkjson
