@@ -2,6 +2,7 @@ FROM debian:stable
 
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
+        curl \
         lua5.3 \
         lua5.3-dev \
         luarocks && \
